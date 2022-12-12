@@ -9,8 +9,8 @@ COPY ./run.sh /run.sh
 
 
 ENV LISTEN_PORT=80
-ENV NGINX_PROXY=http://qnd00_app:9000
-ENV APP_HOST=qnd00_app
+ENV NGINX_PROXY=http://qnd00_app_stg:9000
+ENV APP_HOST=qnd00_app_stg
 ENV APP_PORT=9000
 
 USER root
