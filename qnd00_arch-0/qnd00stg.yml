@@ -1,7 +1,7 @@
 version: '3.9'
 
 services:
-  qnd00_app:
+  qnd00_app_stg:
     image: smartquail/qnd00_app_stg:latest
     restart: unless-stopped
     environment:
@@ -30,7 +30,7 @@ services:
     environment:
       - PORT=80
     depends_on:
-      - qnd00_app
+      - qnd00_app_stg
     ports:
       - "80:80"
       - "443:443"
