@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   qnd00_app_stg:
-    image: smartquail/qnd0.0_app_stg:latest
+    image: smartquail/qnd00_app_stg:latest
     restart: unless-stopped
     environment:
       - PORT=9000
