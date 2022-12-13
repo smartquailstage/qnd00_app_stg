@@ -9,8 +9,8 @@ neofetch --ascii qnode_art.txt --ascii_colors 2 222 3 2 2 -L, --logo && \
 APP_PORT=${PORT:-9000}
 SUPERUSER_EMAIL=${DJANGO_SUPERUSER_EMAIL:-"smartquail.info@gmail.com"}
 
-rm /py/lib/python3.10/site-packages/baton/static/baton/app/dist/baton.min.js
-cp -f /qnd0.0_app_stg/qnd00_app_stg/baton.min.js /py/lib/python3.10/site-packages/baton/static/baton/app/dist/
+#rm /py/lib/python3.10/site-packages/baton/static/baton/app/dist/baton.min.js
+#cp -f /qnd0.0_app_stg/qnd00_app_stg/baton.min.js /py/lib/python3.10/site-packages/baton/static/baton/app/dist/
 python manage.py migrate --noinput
 python manage.py createsuperuser --email $SUPERUSER_EMAIL --noinput || true
 python manage.py collectstatic --settings=qnd00_app_stg.settings.stage --noinput 
