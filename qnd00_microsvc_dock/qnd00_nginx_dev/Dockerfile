@@ -15,20 +15,20 @@ ENV APP_PORT=9000
 
 USER root
 
-RUN mkdir -p /qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles && \
-    chmod 755 /qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles && \
-    mkdir -p /qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/media && \
-    chmod 755 /qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/media && \
-    mkdir -p /qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/static && \
-    chmod 755 /qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/static && \
+RUN mkdir -p /qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles && \
+    chmod 755 /qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles && \
+    mkdir -p /qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/media && \
+    chmod 755 /qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/media && \
+    mkdir -p /qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/static && \
+    chmod 755 /qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/static && \
 
     touch /etc/nginx/conf.d/default.conf && \
     chown nginx:nginx /etc/nginx/conf.d/default.conf && \
     chmod +x /run.sh
 
-VOLUME /qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles
-VOLUME /qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/mediafiles
-VOLUME /qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/static
+VOLUME /qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles
+VOLUME /qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/mediafiles
+VOLUME /qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/static
 
 USER nginx
 #ENTRYPOINT [ "/entrypoint.sh" ]
