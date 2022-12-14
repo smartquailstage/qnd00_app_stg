@@ -32,7 +32,7 @@ services:
     depends_on:
       - qnd00_app_stg
     ports:
-      - "80:80"
+      - "9000:80"
       - "443:443"
     volumes: 
       - static-data-qnd00:/qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles
