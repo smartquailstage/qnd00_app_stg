@@ -15,9 +15,9 @@ services:
     ports:
       - "9000:9000"
     volumes:
-      - static-data-qnd00:/qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles
-      - static-data-qnd00:/qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/media
-      - static-data-qnd00:/qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/static
+      - static-data-qnd00:/qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles
+      - static-data-qnd00:/qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/media
+      - static-data-qnd00:/qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/static
     networks: 
       - lansmartquail
    # command: sh -c "chmod +x /scripts/migrations.sh && sh /scripts/migrations.sh && sh /scripts/run.sh"
@@ -32,12 +32,12 @@ services:
     depends_on:
       - qnd00_app_stg
     ports:
-      - "9000:80"
+      - "80:80"
       - "443:443"
     volumes: 
-      - static-data-qnd00:/qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles
-      - static-data-qnd00:/qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/media
-      - static-data-qnd00:/qnd0.0_app_stg/qnd00_app_stg/qnd00_app_stg/static
+      - static-data-qnd00:/qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/staticfiles
+      - static-data-qnd00:/qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/media
+      - static-data-qnd00:/qnd00_app_stg/qnd00_app_stg/qnd00_app_stg/static
     networks: 
       - lansmartquail
 
