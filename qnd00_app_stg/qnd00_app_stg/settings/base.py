@@ -81,8 +81,8 @@ INSTALLED_APPS = [
     'wagtailgmaps',
     #'django_social_share',
     'taggit',
-    #'webapp_0',
-    #'streams',
+    'webapp_0',
+    'streams',
     'widget_tweaks',
    #SMARTQUAIL-BUSINESS-CONSULTING
     #'shop',
